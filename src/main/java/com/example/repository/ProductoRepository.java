@@ -7,7 +7,7 @@ import org.springframework.data.jpa.repository.Query;
 
 import com.example.domain.Producto;
 
-public interface ProductoRepository extends JpaRepository<ProductoRepository, Integer>{
+public interface ProductoRepository extends JpaRepository<Producto, Integer>{
     @Query(value = """
         SELECT s.id, s.nombre, s.sucursal_id, stock
         FROM producto s  

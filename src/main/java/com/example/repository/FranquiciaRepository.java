@@ -7,7 +7,7 @@ import org.springframework.data.jpa.repository.Query;
 
 import com.example.domain.Franquicia;
 
-public interface FranquiciaRepository extends JpaRepository<FranquiciaRepository, Integer> {
+public interface FranquiciaRepository extends JpaRepository<Franquicia, Integer> {
     @Query(value = """
         SELECT s.id, s.nombre
         FROM franquicia s  
